@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Pour les Nuls
+                    Rendus Lisa Da Cunha & Laura Vincent
                 </div>
 
                 <div class="links">
