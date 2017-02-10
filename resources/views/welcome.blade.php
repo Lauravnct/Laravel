@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Rendus Lisa Da Cunha & Laura Vincent
+                    <strong>Rendus Lisa Da Cunha & Laura Vincent</strong>
                 </div>
 
                 <div class="links">
