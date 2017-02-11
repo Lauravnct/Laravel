@@ -4,20 +4,29 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
+
+                @include('messages.errors')
+
                 <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
+                    <div class="panel-heading">Modifier un article</div>
 
                     <div class="panel-body">
-                        <form method="POST" action="{{ route('article.update', $article->id) }}">
-                            {{ csrf_field() }}
+                        <form action="{{ route('article.update', $article->id) }}" method="POST">
+
                             <input type="hidden" name="_method" value="PUT">
 
-                            <input class=form-control" type="text" name="title" placeholder="Titre">
+                            {{ csrf_field() }}
 
-                            <textarea class="form-control" name="content" placeholder="Contenue"></textarea>
-                            {{ $article->content }}
-                            <input type="submit" value="Publier" clss="btn btn-info">
-                        </form>
+                            <div class="form-group">
+                                <input type="text" name="title" placeholder="Titre" class="form-control"
+                                       value="{{ $article->title }}">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="content" placeholder="Votre contenu"
+                                          class="form-control">{{ $article->content }}</textarea>
+                            </div>
+
+                            <input type="submit" value="Publier" class="btn btn-info">
                         </form>
                     </div>
                 </div>

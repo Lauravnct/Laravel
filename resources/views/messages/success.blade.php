@@ -1,1 +1,5 @@
-@if($success = $session::get('success'))
+@if($success = Session::get('success'))
+    <div class="alert alert-success">
+        {{ $success }}
+    </div>
+@endif

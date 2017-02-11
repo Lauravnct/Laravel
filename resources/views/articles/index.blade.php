@@ -6,20 +6,19 @@
             <div class="col-md-8 col-md-offset-2">
                 @include('messages.success')
                 <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
+                    <div class="panel-heading">Liste des articles</div>
 
-                    <h1>Liste des taches</h1>
-                    <ul>
-                        @forelse ($articles as $article)
-                            <li><a href="{{ route('article.show', $article->id) }}"> {{$article->content}}</a></li>
-                        @empty
-                            <li>Aucune tâche</li>
-                        @endforelse
-                    </ul>
-                    {{ $articles->links() }}
+                    <div class="panel-body">
+                        <ul>
+                            @foreach($articles as $article)
+                                <li><a href="{{ route('article.show', $article->id) }}">{{ $article->title }}</a></li>
+                            @endforeach
+                        </ul>
+
+                        {{ $articles->links() }}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 @endsection
