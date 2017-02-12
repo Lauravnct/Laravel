@@ -89,7 +89,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <strong>Lisa Da Cunha & Laura Vincent</strong>
+                    <strong>Sur notre blog</strong>
                 </div>
 
 
