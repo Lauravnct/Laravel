@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('/article', 'ArticleController');
 
+<<<<<<< HEAD
 Route::get('/user', function() {
     return view('user');
 });
@@ -28,3 +29,10 @@ Route::get('/user', function() {
 Route::get('/admin', function() {
     return view('admin');
 });
+=======
+Route::get('/hello', function() {
+   return 'hello world';
+
+
+});
+>>>>>>> Title
