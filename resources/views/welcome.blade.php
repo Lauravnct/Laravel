@@ -89,7 +89,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <strong>Sur notre blog</strong>
+                    <strong>Sur notre blog !</strong>
                 </div>
 
 
