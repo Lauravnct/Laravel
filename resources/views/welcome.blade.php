@@ -84,7 +84,7 @@
             @if(Auth::check())
                 Bienvenu {{ Auth::user()->name }}
             @endif(Auth::check())
-                Bienvenu !
+                Bienvenu
         </div>
 
             <div class="content">
