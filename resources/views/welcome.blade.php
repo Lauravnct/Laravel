@@ -84,16 +84,14 @@
             @if(Auth::check())
                 Bienvenu {{ Auth::user()->name }}
             @endif(Auth::check())
-                Bienvenu
-
-<<<<<<< HEAD
+                Bienvenu !
         </div>
-=======
+
             <div class="content">
                 <div class="title m-b-md">
                     <strong>Lisa Da Cunha & Laura Vincent</strong>
                 </div>
->>>>>>> Title
+
 
         <div class="links">
             <a href="https://laravel.com/docs">Documentation</a>
