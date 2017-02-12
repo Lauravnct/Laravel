@@ -22,6 +22,3 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('/article', 'ArticleController');
 
-Route::get('/hello', function() {
-   return 'hello world';
-});
