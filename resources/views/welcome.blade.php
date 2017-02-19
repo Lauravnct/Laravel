@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Blog Laravel</title>
+    <title>Blog</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -13,8 +13,8 @@
     <!-- Styles -->
     <style>
         html, body {
-            background-color: #fff;
-            color: #636b6f;
+            background-color: cornflowerblue;
+            color: white;
             font-family: 'Raleway', sans-serif;
             font-weight: 100;
             height: 100vh;
@@ -50,7 +50,7 @@
         }
 
         .links > a {
-            color: #636b6f;
+            color: white;
             padding: 0 25px;
             font-size: 12px;
             font-weight: 600;
@@ -73,8 +73,8 @@
                 <a href="{{ url('/user') }}">Profil</a>
                 <a href="{{ url('/welcome') }}">Article</a>
             @else
-                <a href="{{ url('/login') }}">Login</a>
-                <a href="{{ url('/register') }}">Register</a>
+                <a href="{{ url('/login') }}">Se connecter</a>
+                <a href="{{ url('/register') }}">Créer un compte</a>
             @endif
         </div>
     @endif
@@ -89,7 +89,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <strong>Notre blog !</strong>
+                    <strong>Votre blog !</strong>
                 </div>
     </div>
 </div>

@@ -1,5 +1,16 @@
 @extends('layouts.app')
 
+<style>
+
+   body {
+        background-color: black;
+        color: white;
+        font-weight: 100;
+        height: 100vh;
+        margin: 0;
+    }
+</style>
+
 @section('content')
     <div class="container">
         <div class="row">
@@ -8,7 +19,7 @@
                     <div class="panel-heading">Dashboard</div>
 
                     <div class="panel-body">
-                        You are logged in!
+                       Vous êtes connecté !
 
                         @if(Auth::check())
                             Bonjour {{ Auth::user()->name }}
